@@ -1,0 +1,80 @@
+body{
+    background-color: rgb(1, 61, 61);
+}
+
+.board-container{
+    /* padding: 200px; */
+    margin: 200px;
+}
+
+.board-row {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.heading{
+    position: relative;
+    margin-left: 28%;
+    font-weight: bolder;
+    font-size:50px;
+    background: url('/Users/sonish2319/Desktop/projects/tic-tac/public/naruto.png');
+    background-clip: text;
+    background-size: cover;
+    color: transparent;
+
+}
+
+span{
+    color: rgb(253, 39, 236);
+}
+
+.square-text{
+    font-size: 80px;
+    font-weight: bolder;
+    background: url('/Users/sonish2319/Desktop/projects/tic-tac/public/naruto.png');
+    background-clip: text;
+    background-size: cover;
+    color: transparent;
+}
+
+.main-heading{
+    position: relative;
+    font-size: 100px;
+    margin-left: 10%;
+    background: url('/Users/sonish2319/Desktop/projects/tic-tac/public/naruto.png');
+    background-clip: text;
+    background-size: cover;
+    color: transparent;
+
+}
+
+.play-again{
+    font-size: 50px;
+    font-weight: bolder;
+    background: url('/Users/sonish2319/Desktop/projects/tic-tac/public/naruto.png');
+    background-clip: text;
+    background-size: cover;
+    color: transparent;
+    margin-left: 30%;
+}
+
+.button{
+    width: 200px;
+    height: 80px;
+    cursor: pointer;
+    border: 5px solid rgb(136, 245, 85);
+    border-radius: 10px;
+    background-color: rgb(2, 69, 47);
+
+}
+
+.play{
+    font-size: 30px;
+    font-weight: bolder;
+    background: url('/Users/sonish2319/Desktop/projects/tic-tac/public/naruto.png');
+    background-clip: text;
+    background-size: cover;
+    color: transparent;
+}

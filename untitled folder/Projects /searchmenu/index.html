@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        margin-left: 40%;
+        margin-top: 20%;
+        border: 1px solid black;
+        width: 300px;
+      }
+      .container h1 {
+        padding-left: 15%;
+      }
+      #searchInput {
+        margin-left: 15%;
+        border-radius: 10px;
+        border: none;
+        width: 200px;
+        height: 20px;
+      }
+      li {
+        list-style: none;
+       
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Search Box</h1>
+      <input
+        type="text"
+        id="searchInput"
+        oninput="search()"
+        placeholder="Search Items"
+      />
+      <ul id="list">
+        <li>Naruto</li>
+        <li>One Piece</li>
+        <li>AOT</li>
+        <li>Vinland Saga</li>
+        <li>Demon Slayer</li>
+        <li>One Punch Man</li>
+        <li>Death Note</li>
+        <li>Bleach</li>
+        <li>Bleach TYBW</li>
+        <li>Jujutsu Kaisen</li>
+        <li>Jujutsu movie zero</li>
+        <li>One Piece Red</li>
+        <li>Naruto The Last Adventure</li>
+        <li>One Piece Z</li>
+        <li>Boruto</li>
+        <li>Doremon</li>
+      </ul>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
+
+<!--
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search List</title>
+    <style>
+      .hidden {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Search Box</h1>
+      <input
+        type="text"
+        id="searchInput"
+        oninput="search()"
+        placeholder="Search Items"
+      />
+      <ul id="list">
+        
+        <li>Naruto</li>
+        <li>One Piece</li>
+        <li>AOT</li>
+        <li>Vinland Saga</li>
+        <li>Demon Slayer</li>
+        <li>One Punch Man</li>
+        <li>Bleach</li>
+        <li>Dragon Ball</li>
+        <li>My Hero Academia</li>
+        <li>Hunter x Hunter</li>
+        
+      </ul>
+    </div>
+    <script>
+      const items = document.querySelectorAll("#list li");
+
+      function initializeList() {
+        items.forEach((item, index) => {
+          if (index >= 5) {
+            item.classList.add("hidden");
+          }
+        });
+      }
+
+      function search() {
+        const input = document
+          .getElementById("searchInput")
+          .value.toLowerCase();
+
+        const matches = [];
+        items.forEach((item) => {
+          const text = item.textContent.toLowerCase();
+          if (text.includes(input)) {
+            matches.push(item);
+          }
+          item.classList.add("hidden");
+        });
+
+        // Show matched items or first 5 if no input
+        if (input === "") {
+          // Show first 5 items if input is empty
+          for (let i = 0; i < 5; i++) {
+            if (items[i]) items[i].classList.remove("hidden");
+          }
+        } else {
+          // Show all matching items at the top
+          matches.forEach((match) => match.classList.remove("hidden"));
+        }
+      }
+
+      // Initialize the list to show only the first 5 items
+      initializeList();
+    </script>
+  </body>
+</html>
+-->
